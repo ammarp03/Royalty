@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
-import styled from "styled-components";
+import { SvgBanner } from "../components/svg/Svg";
+
 import {
   MacbookProRoot,
   MainContainer,
@@ -29,7 +30,9 @@ const MacBookPro16: FunctionComponent = () => {
       <MainContainer>
         <ContentWrapper>
           <LeftSide>
-            <Image src='/svg.png' />
+            <Image>
+              <SvgBanner/>
+            </Image>
             <BottomTextWrapper>
               <MarketingText>
                 Royalty collections, simplified. It’s next level!

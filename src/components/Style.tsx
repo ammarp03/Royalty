@@ -14,7 +14,7 @@ export const MacbookProRoot = styled.div`
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   align-items: center;
   width: 100%;
 `;
@@ -47,24 +47,28 @@ export const LeftSide = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled.svg`
   object-fit: contain;
-  max-height: 300px;
+  /* max-height: 300px; */
+  height:450px;
+  width: -webkit-fill-available;
   @media (max-width: 768px) {
-    width: -webkit-fill-available;
+    height:300px;
+
   }
 `;
 
+
 export const BottomTextWrapper = styled.div`
   text-align: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 2rem;
   background: linear-gradient(146.36deg, #dfeaf0, #d5e4ea 54.5%, #f4e7f4);
   width: 100%;
 
   @media (max-width: 768px) {
-    margin-top: 1rem;
-    padding: 1rem;
+    /* margin-top: 1rem; */
+    padding:1rem 0rem;
   }
 `;
 
@@ -164,12 +168,13 @@ export const ForgotPassword = styled.div`
 `;
 
 export const SignUpButton = styled.button`
-  width: 100%;
+  width: 144px;
   height: 56px;
   border-radius: var(--br-41xl);
   background-color: var(--color-lightsteelblue-100);
   color: var(--color-white);
   font-size: var(--font-size-lg);
+  border: 0px;
   font-weight: bold;
   margin: 1rem 0;
   cursor: pointer;
@@ -186,7 +191,7 @@ export const AgreementText = styled.div`
   font-size: var(--font-size-sm);
   text-align: center;
   a {
-    color: var(--color-lightsteelblue-100);
+    color: var(--color-gray-200);
     text-decoration: underline;
   }
 
