@@ -14,7 +14,7 @@ export const MacbookProRoot = styled.div`
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* max-width: 1300px; */
+  max-width: 1300px;
   align-items: center;
   width: 100%;
 `;
@@ -50,7 +50,7 @@ export const LeftSide = styled.div`
 export const Svg = styled.svg`
   object-fit: contain;
   /* max-height: 300px; */
-  height:450px;
+  height:327px;
   width: -webkit-fill-available;
   @media (max-width: 768px) {
     height:300px;
@@ -67,6 +67,7 @@ export const Svg2 = styled.svg`
 export const Image = styled.img`
   object-fit: cover;
   width: 35px;
+  margin-bottom: 20px;
   align-self: flex-start;
 
   /* max-height: 300px; */
@@ -80,7 +81,7 @@ export const BottomTextWrapper = styled.div`
   text-align: center;
   /* margin-top: 2rem; */
   padding: 2rem;
-  background: linear-gradient(146.36deg, #dfeaf0, #d5e4ea 54.5%, #f4e7f4);
+  /* background: linear-gradient(146.36deg, #dfeaf0, #d5e4ea 54.5%, #f4e7f4); */
   width: 100%;
 
   @media (max-width: 768px) {
@@ -90,7 +91,7 @@ export const BottomTextWrapper = styled.div`
 `;
 
 export const MarketingText = styled.h3`
-  font-size: var(--font-size-41xl);
+  font-size: 40px;
   font-weight: 500;
   margin-bottom: 1rem;
 
