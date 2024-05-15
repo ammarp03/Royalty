@@ -38,7 +38,7 @@ export const LeftSide = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background: linear-gradient(146.36deg, #dfeaf0, #d5e4ea 54.5%, #f4e7f4);
   padding: 2rem;
 
@@ -47,13 +47,30 @@ export const LeftSide = styled.div`
   }
 `;
 
-export const Image = styled.svg`
+export const Svg = styled.svg`
   object-fit: contain;
   /* max-height: 300px; */
   height:450px;
   width: -webkit-fill-available;
   @media (max-width: 768px) {
     height:300px;
+
+  }
+`;
+export const Svg2 = styled.svg`
+  object-fit: contain;
+  height: 16px;
+  width: 8px;
+`;
+
+
+export const Image = styled.img`
+  object-fit: cover;
+  width: 35px;
+  align-self: flex-start;
+
+  /* max-height: 300px; */
+  @media (max-width: 768px) {
 
   }
 `;
@@ -93,21 +110,37 @@ export const SubText = styled.p`
 export const RightSide = styled.div`
   flex: 1;
   padding: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    /* justify-content: center; */
+    /* margin-top: 4em; */
 
   @media (max-width: 768px) {
     padding: 1rem;
   }
 `;
 
+
 export const Header = styled.div`
   text-align: center;
   margin-bottom: 2rem;
+`;
+export const RightAlign = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-right: 10px;
 `;
 
 export const GetStartedWith = styled.h1`
   font-size: var(--font-size-11xl);
   font-weight: 500;
   margin: 0;
+  text-align: start;
 
   @media (max-width: 768px) {
     font-size: var(--font-size-3xl);
@@ -116,6 +149,7 @@ export const GetStartedWith = styled.h1`
 
 export const CreateAnAccount = styled.h2`
   font-size: var(--font-size-3xl);
+  text-align: start;
   margin: 0;
 
   @media (max-width: 768px) {

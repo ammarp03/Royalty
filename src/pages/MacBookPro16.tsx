@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { SvgBanner } from "../components/svg/Svg";
+import { ArrowRight, SvgBanner } from "../components/svg/Svg";
 
 import {
   MacbookProRoot,
@@ -22,6 +22,9 @@ import {
   ForgotPassword,
   SignUpButton,
   AgreementText,
+  Svg,
+  RightAlign,
+  Svg2,
 } from '../components/Style';
 
 const MacBookPro16: FunctionComponent = () => {
@@ -30,9 +33,10 @@ const MacBookPro16: FunctionComponent = () => {
       <MainContainer>
         <ContentWrapper>
           <LeftSide>
-            <Image>
-              <SvgBanner/>
-            </Image>
+            <Image src='/leftImage.png' />
+            <Svg>
+              <SvgBanner />
+            </Svg>
             <BottomTextWrapper>
               <MarketingText>
                 Royalty collections, simplified. It’s next level!
@@ -43,6 +47,14 @@ const MacBookPro16: FunctionComponent = () => {
             </BottomTextWrapper>
           </LeftSide>
           <RightSide>
+            <RightAlign>
+              <SubText>
+                Log in
+              </SubText>
+              <Svg2>
+                <ArrowRight />
+              </Svg2>
+            </RightAlign>
             <Header>
               <GetStartedWith>{`Get started with Franchain `}</GetStartedWith>
               <CreateAnAccount>Create an account in 5 minutes.</CreateAnAccount>
