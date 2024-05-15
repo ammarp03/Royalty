@@ -25,6 +25,7 @@ import {
   Svg,
   RightAlign,
   Svg2,
+  ContentContainer,
 } from '../components/Style';
 
 const MacBookPro16: FunctionComponent = () => {
@@ -33,20 +34,23 @@ const MacBookPro16: FunctionComponent = () => {
       <MainContainer>
         <ContentWrapper>
           <LeftSide>
+            <ContentContainer>
             <Image src='/leftImage.png' />
             <Svg>
               <SvgBanner />
             </Svg>
             <BottomTextWrapper>
               <MarketingText>
-                Royalty collections, simplified. It’s next level!
+                Royalty collections, simplified.<br/> It’s next level!
               </MarketingText>
               <SubText>
                 Revenue based invoice collection to make royalty collection as easy as...
               </SubText>
             </BottomTextWrapper>
+            </ContentContainer>
           </LeftSide>
           <RightSide>
+            <ContentContainer>
             <RightAlign>
               <SubText>
                 Log in
@@ -105,6 +109,7 @@ const MacBookPro16: FunctionComponent = () => {
               </a>
               .
             </AgreementText>
+            </ContentContainer>
           </RightSide>
         </ContentWrapper>
       </MainContainer>

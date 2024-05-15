@@ -14,7 +14,7 @@ export const MacbookProRoot = styled.div`
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   align-items: center;
   width: 100%;
 `;
@@ -33,6 +33,9 @@ export const ContentWrapper = styled.div`
   }
 `;
 
+export const ContentContainer = styled.div`
+  max-width: 650px;
+`
 export const LeftSide = styled.div`
   flex: 1;
   display: flex;
